@@ -27,14 +27,15 @@ function Header() {
             </div>
 
             {/* Menu hamburguesa en moviles */}
-            <div className="md:hidden relative"> {/* Oculto a partir de pantallas medianas */}
+            <div className="md:hidden relative flex flex-row gap-5"> {/* Oculto a partir de pantallas medianas */}
+              <Link to="/perfil"><img src="/Perfil.svg" alt="perfil" className="h-8 w-auto" /></Link>
               <button onClick={cambiarMenu} className="h-8 w-8 rounded-sm">
                 <img src="/Menu-hamburguesa.svg" alt="Menú" />
               </button>
 
               {/* Menu desplegable que aparece cuando menuAbierto = true */}
               {menuAbierto && (
-                <div className="absolute w-auto right-0 bg-verdeMarcaPrimario text-2xl font-bold text-white rounded-2xl shadow-md flex flex-col items-end-safe px-10 py-5 z-10 whitespace-nowrap">
+                <div className="absolute w-auto top-10 right-0 bg-verdeMarcaPrimario text-2xl font-bold text-white rounded-2xl shadow-md flex flex-col items-end-safe px-10 py-5 z-10 whitespace-nowrap">
                   <Link to="/perros" className="py-2 hover:underline" onClick={() => setMenuAbierto(false)} >Perros</Link>
                   <Link to="/protectoras" className="py-2 hover:underline" onClick={() => setMenuAbierto(false)} >Protectoras</Link>
                   

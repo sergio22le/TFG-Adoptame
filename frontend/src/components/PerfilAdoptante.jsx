@@ -25,7 +25,7 @@ function PerfilAdoptante() {
 
   return (
     <div className="w-full flex flex-col items-center justify-center">
-      <div className="grid grid-cols-2 md:flex md:flex-row lg:gap-10 items-center justify-center w-full mx-10 p-5 shadow-md">
+      <div className="grid grid-cols-2 bg-fondo md:bg-inherit md:flex md:flex-row lg:gap-10 items-center justify-center w-full mx-10 md:pt-5 pb-5 px-5 shadow-md">
         <button className="text-lg font-semibold hover:cursor-pointer bg-verdeMarcaPrimario rounded-xl text-white hover:bg-verdeMarcaSecundario p-3 mx-5 my-2 md:bg-fondo md:hover:bg-fondo md:font-bold md:text-black md:text-2xl md:hover:underline" onClick={() => manejarSeleccion("Mis datos")}>Mis datos</button>
         <button className="text-lg font-semibold hover:cursor-pointer bg-verdeMarcaPrimario rounded-xl text-white hover:bg-verdeMarcaSecundario p-3 mx-5 my-2 md:bg-fondo md:hover:bg-fondo md:font-bold md:text-black md:text-2xl md:hover:underline" onClick={() => manejarSeleccion("Historial")}>Historial</button>
         <button className="text-lg font-semibold hover:cursor-pointer bg-verdeMarcaPrimario rounded-xl text-white hover:bg-verdeMarcaSecundario p-3 mx-5 my-2 md:bg-fondo md:hover:bg-fondo md:font-bold md:text-black md:text-2xl md:hover:underline" onClick={() => manejarSeleccion("Notificaciones")}>Notificaciones</button>
